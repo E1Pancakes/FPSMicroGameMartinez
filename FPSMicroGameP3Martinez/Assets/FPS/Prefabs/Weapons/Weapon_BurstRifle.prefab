@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6699449791131835224}
   m_LocalRotation: {x: -0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.392611, y: -4.241327, z: -2.2496872}
+  m_LocalPosition: {x: -0.005, y: -0.0097, z: 0.2656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8394584633838408069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -184,15 +184,16 @@ MonoBehaviour:
     CrosshairSize: 0
     CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
   WeaponRoot: {fileID: 4665396095400673382}
-  WeaponMuzzle: {fileID: 0}
-  ShootType: 0
-  ProjectilePrefab: {fileID: 0}
-  DelayBetweenShots: 0.5
-  BulletSpreadAngle: 0
+  WeaponMuzzle: {fileID: 7682516493216597859}
+  ShootType: 1
+  ProjectilePrefab: {fileID: 8304074374390040910, guid: b25517eb933f3c34da477b2915819a98,
+    type: 3}
+  DelayBetweenShots: 0.05
+  BulletSpreadAngle: 0.5
   BulletsPerShot: 1
-  RecoilForce: 1
-  AimZoomRatio: 1
-  AimOffset: {x: 0, y: 0, z: 0}
+  RecoilForce: 0
+  AimZoomRatio: 0.25
+  AimOffset: {x: 0, y: 0.13, z: 0}
   AutomaticReload: 1
   HasPhysicalBullets: 0
   ClipSize: 30
@@ -200,17 +201,18 @@ MonoBehaviour:
   EjectionPort: {fileID: 0}
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
-  AmmoReloadRate: 1
-  AmmoReloadDelay: 2
-  MaxAmmo: 8
+  AmmoReloadRate: 1e+10
+  AmmoReloadDelay: 0.1
+  MaxAmmo: 999
   AutomaticReleaseOnCharged: 0
   MaxChargeDuration: 2
   AmmoUsedOnStartCharge: 1
   AmmoUsageRateWhileCharging: 1
   WeaponAnimator: {fileID: 0}
-  MuzzleFlashPrefab: {fileID: 0}
+  MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 9f671b22f25370048a18fb1f821294ec,
+    type: 3}
   UnparentMuzzleFlash: 0
-  ShootSfx: {fileID: 0}
+  ShootSfx: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
   ChangeWeaponSfx: {fileID: 0}
   UseContinuousShootSound: 0
   ContinuousShootStartSfx: {fileID: 0}
